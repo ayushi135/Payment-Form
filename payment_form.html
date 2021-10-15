@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class='container'>
+    <form action=''>
+    <h1 class='main_heading'> Payment Form</h1>
+    <h4>Required field are followed by *</h4>
+    
+    
+    <legend><h2>Contact Information </h2></legend>
+    <p > NAME *<input type="text" name='name' placeholder='ayushi' required></p>
+    <fieldset>
+        Gender *
+        <p>
+            Male <input type="radio" name="gender" id="male"required> Female <input type='radio' name='gender' id='female' required>
+
+        </p>
+    </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="50" rows="4"></textarea>
+        </p>
+        <p>
+            Email: * <input type="email" name="email" id="email" placeholder='ayushi@gmail.com'required>
+        </p>
+        <p>Pincode <input type="number" name="pincode" id="pincode"></p>
+    
+    <fieldset>  
+        <legend><h2>Payment PAGE </h2></legend>
+        <!-- card type, card number,expiration date,cvv,button paynow -->
+        <p> Card Type *
+            <select name='card type' id='card type'  required>
+                <option value=''> Select a Card type</option>
+                <option value='visa'> Visa</option>
+                <option value='mastercard'> mastercard</option>
+                <option value='rupay'> Rupay</option>
+            </select>
+        </p>
+        <p>
+            Card Number *<input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p> Expiration Date *<input type="date" name="expiration_date" id="expiration_date" required></p>
+        <p>CVV: *<input type="password" name="cvv" id="cvv" required ></p>
+        <input type="submit" value="Pay NOW">
+    </fieldset>
+</form>
+</div>
+    
+</body>
+</html>
